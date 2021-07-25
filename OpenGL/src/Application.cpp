@@ -16,6 +16,7 @@
 #include "Shader.h"
 #include "Texture.h"
 #include "GLCall.h"
+#include "Mesh.h"
 
 
 int main(void)
@@ -128,7 +129,7 @@ int main(void)
 
 
         // IMGUI variables
-        float fov = 1.22173f;
+        float fov = 1.22f;
         glm::vec3 translation(0.0f, 0.0f, -20.0f);
 
         /* Loop until the user closes the window */

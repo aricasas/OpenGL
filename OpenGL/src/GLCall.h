@@ -4,8 +4,7 @@
 
 
 #define ASSERT(x) if (!(x)) __debugbreak(); // Make debugger break if x is false
-#define GLCall(x) GLClearError();\
-x;\
+#define GLCall(x) x;\
 ASSERT(GLCheckError(#x, __FILE__, __LINE__)) // Check for GL errors
 
 
